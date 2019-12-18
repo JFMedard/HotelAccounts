@@ -1,0 +1,39 @@
+.footer {
+  padding: 20px 0;
+  color: $white;
+  background-color: $dark;
+  bottom: 0;
+  min-width: 100vh;
+}
+
+.footer-container.container::before,
+.footer-container.container::after, {
+  display: none;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity .2s ease-in-out;
+  margin: 10px;
+
+  &:hover {
+    opacity: 1;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+.list-inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
